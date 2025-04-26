@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Our Home</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAElBMVEX///8mi8yfyOYNhcoAg8kAgchytXq6AAAEE0lEQVR4nN3XC1IjMQxFUQzD/rc8BQmQdPy3pCvpruCdamIVb+9v2ftMTywf2YklPbGkJ5b0xJKeWNITb8LyLy/xLix57+KPMO9XLOmJJT3xQZj0RS3piSU9saQnXoQJn5urMN/pfxGmI74Ks/2hVoTJnpuaMBexKkxFrAszERvCRMSWMA+xKUxzNNrCLKe/I0xC7Alz/Ba7whTEvjADcSBMQBwJ4xOHwvDEsTD66Z8QBifOCGOf/ilh6K84J4z83EwKAxNnhXGJ08KwxHlhVOKCMChxRRjzLi4JQxLXhBFP/6Iw4G9xVRiPuCwMR1wXRiNuCIMRd4SxiFvCUEdjTxjp9G8KAxF3hXH+ULeFYZ6bfWEU4oEwCPFEGIN4JAzx3JwJIxAPhQGIp0L/p/9Y6P4rngu9v6gCQudECaFvoojQNVFG6JkoJHRMlBL6vYtiQrdEOaFXoqDQ6W9RUuiTKCp0SZQVeiQKCx0SpYX+iOJCd/8vygu93UUFobOvqCH0RVQRuiLqCD29qEpCR0QtoR+imtANUU/o5blRFDo5/ZpCH0RVoYs/VF2hh+dGWeiAqC3kiepCnKgvpIkGQphoIWSPhokQPf02QpJoJAR/i1ZCjmgmxIh2QopoKISIlkKGaCpETr+tkCAaC4HTby20/4rmQvPnxl5oTQSExkRCaEtEhKZERmhJhISGd5ES2hExodnp54RWv0VQaEQkhTZEVGhCZIUWRFhoQKSF+keDBuqfftpX1Ik07yvdP1Ra953qc0PjbmkSads9RSJN+0mPSMt+U3tuaNhfWkTa9ZASkWY9pnP6adVTKl+RRj2n8aLSpksKRJp0TZ5Ii14SJ9Kg16SJtKeSMJHm1JK9i7SmmiiRxtSTJNKWRoK/RZrSSo5IS5qJEWlIOyki7egkRKQZvWSItKKbyP+LNKKfxF2kDYMEviJNGHVOpAXDjok0YNzpi0rvn+iQSM+f6YxIr5/qiEiPn+vkuaG3T3Zw+unps+0T6eXTbf+h0sPn231u6N0LbRLp2SvtEenVS20R6dFr7RDpzYttEOnJq60fDXrxcsunnx683iqR3rvR4m+RnrvTGpFeu9USkR671wqR3rrZApGeuts8kV663fTpp4fuN0ukdx40efrpmSfNfUV65VFTzw098qwZIr3xsAkiPfG0MZFeeNyQSA88b0Sk9wk0uIv0PIn6RHqdSN3TT4+TqfdbpLcJ1SHS06RqE+llYjWJ9DC5WkR6l2ANIj1LsvrRoFeJVj399CjZakR6k3CVP1R6knSvzw29SLwXIj1IviuR3qPQhUjP0ej5uaHXqPREpMfo9Eiktyj1cPrpKVr9fUV6iVq/Lyo9RK8fIr1DsTuRnqHZjUivUO2bSI/Q7YtIb1Du8/0/+ixmeFtiR6wAAAAASUVORK5CYII=">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    /* (your full unchanged CSS here) */
     body { font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #e3f2fd, #bbdefb); color: #333; margin: 0; padding: 0; }
     .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
     .header { text-align: center; padding: 20px 0; }
@@ -46,26 +46,34 @@
       <div class="rule"><i class="fas fa-wind"></i><div class="rule-text"><strong>Drying Clothes:</strong> Select "Trocken Baumwolle." Clothes may come out wrinkled.</div></div>
       <div class="rule"><i class="fas fa-seedling"></i><div class="rule-text"><strong>Plants:</strong> Please do <strong>not</strong> water the plants.</div></div>
       <div class="rule"><i class="fas fa-record-vinyl"></i><div class="rule-text"><strong>Vinyl Collection:</strong> Please avoid using the record player and vinyl collection, as they are fragile.</div></div>
+      <div class="rule"><i class="fas fa-train"></i><div class="rule-text"><strong>Public Transport Tickets:</strong> Most downtown attractions, including our apartment, are in <strong>Travel Zone 110</strong>. You can purchase a <strong>24h ticket</strong> (9.20 CHF) from an automat at almost every public transport stop. If you plan to visit <strong>Uetliberg</strong> or the <strong>Lindt Chocolate Museum</strong>, it's best to buy the <span id="albisTicketLink"></span> (18.40 CHF).</div></div>
+      <div class="rule"><i class="fas fa-route"></i><div class="rule-text"><strong>Travel Planning:</strong> Plan your route, check prices, and buy tickets on <span id="sbbLink"></span>. For multiple trips outside Zurich, consider the <span id="swissPassLink"></span>.</div></div>
       <div class="rule"><i class="fas fa-phone"></i><div class="rule-text"><strong>Emergency Contact:</strong> We are available on WhatsApp, Viber, and Signal at <strong>+41 79 507 3951</strong>.</div></div>
       <div class="rule"><i class="fas fa-door-open"></i><div class="rule-text"><strong>Checkout:</strong> Place used towels and sheets in the basket behind the master bedroom door. Lower thermostats in all rooms to 15°C. Leave the key in the letter mailbox, not inside the box itself.</div></div>
-
-      <!-- NEW reading guide rule -->
-      <div class="rule"><i class="fas fa-book-open"></i><div class="rule-text"><strong>Free Reading Guide:</strong> If you would like to explore Zurich with a free English reading guide, please visit <span id="guideLink"></span> and use the password: <strong>7080</strong>.</div></div>
+      <div class="rule"><i class="fas fa-book-open"></i><div class="rule-text"><strong>Free Reading Guide:</strong> If you would like to explore Zurich with a free English reading guide, starting at Zurich HB, please visit <span id="guideLink"></span> and use the password: <strong>7080</strong>.</div></div>
+      <div class="rule"><i class="fas fas fa-cookie-bite"></i><div class="rule-text"><strong>Lindt Chocolate Museum:</strong>If you plan to visit the Lindt Chocolate Museum, you need to book a reservation at least 2–3 weeks in advance at <span id="lindtLink"></span>.</div></div>
     </div>
   </div>
 
   <script>
-    // Define links
     const parkingLink = '<a href="https://maps.app.goo.gl/DSiHTuy1UpWb5S728" target="_blank">Parking spaces close by</a>';
     const typeJLink = '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_J" target="_blank">type J</a>';
     const typeCLink = '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_C" target="_blank">type C</a>';
     const guideLink = '<a href="https://myfive.travel/en/quest/zurich-in-the-mirror-of-the-past-purchased-365242012/" target="_blank">this address</a>';
-
-    // Insert links
+    const albisTicketLink = '<a href="https://www.zvv.ch/de/abos-und-tickets/weitere-angebote/albis-24h-ticket.html" target="_blank">24h Albis Ticket</a>';
+    const lindtLink = '<a href="https://tickets.lindt-home-of-chocolate.com/selection/timeslotpass?productId=101502126146&lang=en" target="_blank">this reservation site</a>';
+    const sbbLink = '<a href="https://www.sbb.ch/en" target="_blank">this website</a>';
+    const swissPassLink = '<a href="https://www.swissasap.com/swiss-travel-passes/swiss-travel-pass-price/" target="_blank">Swiss Travel Pass</a>';
+  
     document.getElementById('parkingLink').innerHTML = parkingLink;
     document.getElementById('typeJLink').innerHTML = typeJLink;
     document.getElementById('typeCLink').innerHTML = typeCLink;
     document.getElementById('guideLink').innerHTML = guideLink;
+    document.getElementById('albisTicketLink').innerHTML = albisTicketLink;
+    document.getElementById('lindtLink').innerHTML = lindtLink;
+    document.getElementById('sbbLink').innerHTML = sbbLink;
+    document.getElementById('swissPassLink').innerHTML = swissPassLink;
   </script>
+  
 </body>
 </html>
