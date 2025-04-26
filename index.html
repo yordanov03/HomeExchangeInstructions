@@ -1,106 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #e3f2fd, #bbdefb);
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        .header h1 {
-            font-size: 36px;
-            color: #1976d2;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .header p {
-            font-size: 18px;
-            color: #555;
-            animation: fadeIn 2.5s ease-in-out;
-        }
-        .rules {
-            margin-top: 20px;
-        }
-        .rule {
-            display: flex;
-            align-items: center;
-            background: #e3f2fd;
-            padding: 18px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .rule:hover {
-            transform: scale(1.02);
-        }
-        .rule i {
-            font-size: 30px;
-            margin-right: 15px;
-            color: #1976d2;
-            animation: bounce 1.5s infinite alternate;
-        }
-        .rule-text {
-            font-size: 18px;
-            color: #444;
-            flex-grow: 1;
-        }
-        .important {
-            background: #ffe9e9;
-            border-left: 6px solid #d32f2f;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes bounce {
-            from { transform: translateY(0px); }
-            to { transform: translateY(-5px); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* (your full unchanged CSS here) */
+    body { font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #e3f2fd, #bbdefb); color: #333; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .header { text-align: center; padding: 20px 0; }
+    .header h1 { font-size: 36px; color: #1976d2; animation: fadeIn 2s ease-in-out; }
+    .header p { font-size: 18px; color: #555; animation: fadeIn 2.5s ease-in-out; }
+    .rules { margin-top: 20px; }
+    .rule { display: flex; align-items: center; background: #e3f2fd; padding: 18px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s ease-in-out; }
+    .rule:hover { transform: scale(1.02); }
+    .rule i { font-size: 30px; margin-right: 15px; color: #1976d2; animation: bounce 1.5s infinite alternate; }
+    .rule-text { font-size: 18px; color: #444; flex-grow: 1; }
+    .important { background: #ffe9e9; border-left: 6px solid #d32f2f; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes bounce { from { transform: translateY(0px); } to { transform: translateY(-5px); } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🏡 Welcome to Our Home</h1>
-            <p>Please follow these simple guidelines to ensure a comfortable stay.</p>
-        </div>
-        <div class="rules">
-            <div class="rule"><i class="fas fa-parking"></i><div class="rule-text"><strong>Parking:</strong> You are allowed to park only in spots marked by <strong>white lines</strong> (paid by the hour). A time limit is usually indicated on the street sign. Parking on spots with different color lines or outside any lines will result in a fine. <a href="https://maps.app.goo.gl/DSiHTuy1UpWb5S728" target="_blank">Parking spaces close by</a>.</div></div>
-            <div class="rule"><i class="fas fa-key"></i><div class="rule-text"><strong>Keys:</strong> The key is taped inside the mailbox with tag "P. Karpinski S.Yordanov". This is the only spare key. Losing it requires costly replacement and paperwork.</div></div>
-            <div class="rule"><i class="fas fa-shoe-prints"></i><div class="rule-text"><strong>Shoes:</strong> Please take off your shoes when entering the apartment. We do not charge a cleaning fee, so kindly help us keep the space as clean as possible. Thank you!</div></div>
-            <div class="rule"><i class="fas fa-moon"></i><div class="rule-text"><strong>Quiet Hours:</strong> This is a family building, so please keep noise levels down between 10 PM and 6 AM.</div></div>
-            <div class="rule"><i class="fas fa-wifi"></i><div class="rule-text"><strong>Wi-Fi:</strong> Network: <strong>|@x@\</strong> | Password: <strong>J3st3mleniwy;</strong></div></div>
-            <div class="rule"><i class="fas fa-plug"></i><div class="rule-text"><strong>Electricity:</strong> Power sockets support Type C plugs – the standard European plug with two thin metal prongs that stick out.</div></div>
-            <div class="rule"><i class="fas fa-thermometer-half"></i><div class="rule-text"><strong>Heating & Cooling:</strong> Adjust floor heating via thermostats. No cooling system is available.</div></div>
-            <div class="rule"><i class="fas fa-glass-whiskey"></i><div class="rule-text"><strong>Drinking Water:</strong> Tap water is drinkable, as are most public fountains unless marked otherwise.</div></div>
-            <div class="rule"><i class="fas fa-recycle"></i><div class="rule-text"><strong>Trash Sorting:</strong> General waste in white bin (blue bag), PET bottles in right grey bag, cans/bottles in left grey bag. Full bags should be disposed of in the grey container on Zypressenstrasse. New bags are in the middle drawer, left of the oven.</div></div>
-            <div class="rule"><i class="fas fa-utensils"></i><div class="rule-text"><strong>Dishwasher:</strong> All kitchenware except wine glasses is dishwasher-safe. Add a tablet (bottom drawer left of the oven), close lid, and press »» to start.</div></div>
-            <div class="rule important"><i class="fas fa-exclamation-triangle"></i><div class="rule-text"><strong>Dishwasher Safety:</strong> Please do NOT take out the upper basket of the dishwasher all the way. One of the stoppers is missing, and if pulled completely out, the basket will fall and break glasses. Please advise caution.</div></div>
-            <div class="rule"><i class="fas fa-tshirt"></i><div class="rule-text"><strong>Washing Machine:</strong> Use washer & dryer. Detergent is above. Small items in a washing bag (under the sink). Select 'Daily Wash' (1h).</div></div>
-            <div class="rule"><i class="fas fa-wind"></i><div class="rule-text"><strong>Drying Clothes:</strong> Select "Trocken Baumwolle." Clothes may come out wrinkled.</div></div>
-            <div class="rule"><i class="fas fa-seedling"></i><div class="rule-text"><strong>Plants:</strong> Please do <strong>not</strong> water the plants.</div></div>
-            <div class="rule"><i class="fas fa-record-vinyl"></i><div class="rule-text"><strong>Vinyl Collection:</strong> Please avoid using the record player and vinyl collection, as they are fragile.</div></div>
-            <div class="rule"><i class="fas fa-phone"></i><div class="rule-text"><strong>Emergency Contact:</strong> We are available on WhatsApp, Viber, and Signal at <strong>+41 79 507 3951</strong>.</div></div>
-            <div class="rule"><i class="fas fa-door-open"></i><div class="rule-text"><strong>Checkout:</strong> Place used towels and sheets in the basket behind the master bedroom door. Lower thermostats in all rooms to 15°C. Leave the key in the letter mailbox, not inside the box itself.</div></div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h1>🏡 Welcome to Our Home</h1>
+      <p>Please follow these simple guidelines to ensure a comfortable stay.</p>
     </div>
+    <div class="rules">
+      <!-- your normal rules -->
+
+      <div class="rule"><i class="fas fa-parking"></i><div class="rule-text"><strong>Parking:</strong> You are allowed to park only in spots marked by <strong>white lines</strong> (paid by the hour). A time limit is usually indicated on the street sign. Parking on spots with different color lines or outside any lines will result in a fine. <span id="parkingLink"></span></div></div>
+      <div class="rule"><i class="fas fa-key"></i><div class="rule-text"><strong>Keys:</strong> The key is taped inside the mailbox with tag "P. Karpinski S.Yordanov". This is the only spare key. Losing it requires costly replacement and paperwork.</div></div>
+      <div class="rule"><i class="fas fa-shoe-prints"></i><div class="rule-text"><strong>Shoes:</strong> Please take off your shoes when entering the apartment. We do not charge a cleaning fee, so kindly help us keep the space as clean as possible. Thank you!</div></div>
+      <div class="rule"><i class="fas fa-moon"></i><div class="rule-text"><strong>Quiet Hours:</strong> This is a family building, so please keep noise levels down between 10 PM and 6 AM.</div></div>
+      <div class="rule"><i class="fas fa-wifi"></i><div class="rule-text"><strong>Wi-Fi:</strong> Network: <strong>|@x@\</strong> | Password: <strong>J3st3mleniwy;</strong></div></div>
+      <div class="rule"><i class="fas fa-plug"></i><div class="rule-text"><strong>Electricity:</strong> Swiss power sockets are of <span id="typeJLink"></span> but also support <span id="typeCLink"></span> plugs – the standard European plug with two thin metal prongs that stick out.</div></div>
+      <div class="rule"><i class="fas fa-thermometer-half"></i><div class="rule-text"><strong>Heating & Cooling:</strong> Adjust floor heating via thermostats. No cooling system is available.</div></div>
+      <div class="rule"><i class="fas fa-glass-whiskey"></i><div class="rule-text"><strong>Drinking Water:</strong> Tap water is drinkable, as are most public fountains unless marked otherwise.</div></div>
+      <div class="rule"><i class="fas fa-recycle"></i><div class="rule-text"><strong>Trash Sorting:</strong> General waste in white bin (blue bag), PET bottles in right grey bag, cans/bottles in left grey bag. Full bags should be disposed of in the grey container on Zypressenstrasse. New bags are in the middle drawer, left of the oven.</div></div>
+      <div class="rule"><i class="fas fa-utensils"></i><div class="rule-text"><strong>Dishwasher:</strong> All kitchenware except wine glasses is dishwasher-safe. Add a tablet (bottom drawer left of the oven), close lid, and press »» to start.</div></div>
+      <div class="rule important"><i class="fas fa-exclamation-triangle"></i><div class="rule-text"><strong>Dishwasher Safety:</strong> Please do NOT take out the upper basket of the dishwasher all the way. One of the stoppers is missing, and if pulled completely out, the basket will fall and break glasses. Please advise caution.</div></div>
+      <div class="rule"><i class="fas fa-tshirt"></i><div class="rule-text"><strong>Washing Machine:</strong> Use washer & dryer. Detergent is above. Small items in a washing bag (under the sink). Select 'Daily Wash' (1h).</div></div>
+      <div class="rule"><i class="fas fa-wind"></i><div class="rule-text"><strong>Drying Clothes:</strong> Select "Trocken Baumwolle." Clothes may come out wrinkled.</div></div>
+      <div class="rule"><i class="fas fa-seedling"></i><div class="rule-text"><strong>Plants:</strong> Please do <strong>not</strong> water the plants.</div></div>
+      <div class="rule"><i class="fas fa-record-vinyl"></i><div class="rule-text"><strong>Vinyl Collection:</strong> Please avoid using the record player and vinyl collection, as they are fragile.</div></div>
+      <div class="rule"><i class="fas fa-phone"></i><div class="rule-text"><strong>Emergency Contact:</strong> We are available on WhatsApp, Viber, and Signal at <strong>+41 79 507 3951</strong>.</div></div>
+      <div class="rule"><i class="fas fa-door-open"></i><div class="rule-text"><strong>Checkout:</strong> Place used towels and sheets in the basket behind the master bedroom door. Lower thermostats in all rooms to 15°C. Leave the key in the letter mailbox, not inside the box itself.</div></div>
+
+      <!-- NEW reading guide rule -->
+      <div class="rule"><i class="fas fa-book-open"></i><div class="rule-text"><strong>Free Reading Guide:</strong> If you would like to explore Zurich with a free English reading guide, please visit <span id="guideLink"></span> and use the password: <strong>7080</strong>.</div></div>
+    </div>
+  </div>
+
+  <script>
+    // Define links
+    const parkingLink = '<a href="https://maps.app.goo.gl/DSiHTuy1UpWb5S728" target="_blank">Parking spaces close by</a>';
+    const typeJLink = '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_J" target="_blank">type J</a>';
+    const typeCLink = '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_C" target="_blank">type C</a>';
+    const guideLink = '<a href="https://myfive.travel/en/quest/zurich-in-the-mirror-of-the-past-purchased-365242012/" target="_blank">this address</a>';
+
+    // Insert links
+    document.getElementById('parkingLink').innerHTML = parkingLink;
+    document.getElementById('typeJLink').innerHTML = typeJLink;
+    document.getElementById('typeCLink').innerHTML = typeCLink;
+    document.getElementById('guideLink').innerHTML = guideLink;
+  </script>
 </body>
 </html>
