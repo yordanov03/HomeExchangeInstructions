@@ -179,8 +179,9 @@
         <div class="rule">
           <i class="fas fa-thermometer-half"></i>
           <div class="rule-text">
-            <strong>Heating & Cooling:</strong> Adjust floor heating via
-            thermostats. No cooling system is available.
+            <strong>Electricity:</strong> Swiss power sockets are of
+            <span id="typeJLink"></span> but also support
+            <span id="typeCLink"></span> plugs.
           </div>
         </div>
         <div class="rule">
@@ -328,10 +329,8 @@
     </div>
 
     <script>
-      const parkingLink =
-        '<a href="https://maps.app.goo.gl/DSiHTuy1UpWb5S728" target="_blank">Parking spaces close by</a>';
       const typeJLink =
-        '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_J" target="_blank">type J</a>';
+        '<a href="https://en.wikipedia.org/wiki/SN_441011" target="_blank">type J</a>';
       const typeCLink =
         '<a href="https://en.wikipedia.org/wiki/AC_power_plugs_and_sockets#Type_C" target="_blank">type C</a>';
       const guideLink =
@@ -345,7 +344,6 @@
       const swissPassLink =
         '<a href="https://www.swissasap.com/swiss-travel-passes/swiss-travel-pass-price/" target="_blank">Swiss Travel Pass</a>';
 
-      document.getElementById("parkingLink").innerHTML = parkingLink;
       document.getElementById("typeJLink").innerHTML = typeJLink;
       document.getElementById("typeCLink").innerHTML = typeCLink;
       document.getElementById("guideLink").innerHTML = guideLink;
